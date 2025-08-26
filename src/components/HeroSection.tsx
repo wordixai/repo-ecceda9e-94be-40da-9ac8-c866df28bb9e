@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-black via-zinc-500/20 to-black min-h-1/3">
+    <section className="relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8 min-h-1/3" style={{background: 'linear-gradient(to right, black, rgba(115, 115, 115, 0.2), black)'}}>
       <div className="max-w-7xl mx-auto text-center">
         <div className="mb-8">
           <h1 className="text-6xl font-bold mb-6">
@@ -14,7 +14,7 @@ const HeroSection = () => {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
-          <button className="bg-white font-bold hover:bg-zinc-100 text-tokyo-dark px-8 py-4 rounded-xl transition-all hover:opacity-80 cursor-pointer">
+          <button className="bg-white font-bold hover:bg-zinc-100 text-tokyo-dark px-8 py-4 rounded-xl transition-all hover:opacity-80">
             Try for free
           </button>
         </div>

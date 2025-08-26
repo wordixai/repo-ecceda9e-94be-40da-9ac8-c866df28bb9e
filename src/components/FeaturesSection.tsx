@@ -48,7 +48,7 @@ const FeaturesSection = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="tokyo-feature-card">
+            <div key={index} className="bg-white rounded-xl p-8 hover:border-zinc-600 transition-all hover:scale-105">
               <div className="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center mb-6">
                 <feature.icon className="w-8 h-8 text-black" />
               </div>

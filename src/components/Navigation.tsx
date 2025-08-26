@@ -16,19 +16,19 @@ const Navigation = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="tokyo-nav-link">
+            <a href="#features" className="text-zinc-300 hover:text-white transition-colors">
               Features
             </a>
-            <a href="#tracking" className="tokyo-nav-link">
+            <a href="#tracking" className="text-zinc-300 hover:text-white transition-colors">
               AI Tracking
             </a>
-            <a href="#clients" className="tokyo-nav-link">
+            <a href="#clients" className="text-zinc-300 hover:text-white transition-colors">
               Client Management
             </a>
             <a
               href="https://www.npmjs.com/package/tokyo-ai"
               target="_blank"
-              className="tokyo-nav-link hover:opacity-80 flex items-center gap-2"
+              className="text-zinc-300 hover:text-white hover:opacity-80 flex items-center gap-2 transition-colors"
             >
               <img
                 src="https://www.usetokyo.com/npm.png"
@@ -40,10 +40,10 @@ const Navigation = () => {
           </div>
           
           <div className="flex items-center space-x-4">
-            <button className="tokyo-button-secondary">
+            <button className="text-white font-semibold px-6 py-2 rounded-lg transition-colors hover:opacity-80 border border-transparent hover:border-zinc-700">
               Login
             </button>
-            <button className="tokyo-button-primary">
+            <button className="bg-white hover:bg-zinc-100 text-tokyo-dark font-semibold px-6 py-3 rounded-lg transition-all hover:opacity-90">
               Try for free
             </button>
           </div>

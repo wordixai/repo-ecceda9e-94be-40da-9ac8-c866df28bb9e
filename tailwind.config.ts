@@ -61,7 +61,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom Tokyo AI colors
+				'tokyo-dark': 'hsl(var(--tokyo-dark))',
+				'tokyo-card': 'hsl(var(--tokyo-card))',
+				'tokyo-border': 'hsl(var(--tokyo-border))',
+				'tokyo-zinc-300': 'hsl(var(--tokyo-zinc-300))',
+				'tokyo-zinc-400': 'hsl(var(--tokyo-zinc-400))',
+				'tokyo-zinc-600': 'hsl(var(--tokyo-zinc-600))',
+				'tokyo-zinc-900': 'hsl(var(--tokyo-zinc-900))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
