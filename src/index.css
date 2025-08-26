@@ -8,20 +8,64 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-   
-  }
-
-  .dark {
-
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
+    --background: 18 18 18; /* #121212 */
+    --foreground: 0 0% 100%; /* white */
+    --card: 26 26 26; /* #1a1a1a */
+    --card-foreground: 0 0% 100%;
+    --popover: 18 18 18;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 18 18 18;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 0 0% 18%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 0 0% 83%;
+    --radius: 0.5rem;
+    
+    /* Custom colors for Tokyo AI */
+    --tokyo-dark: 18 18 18; /* #121212 */
+    --tokyo-card: 26 26 26; /* #1a1a1a */
+    --tokyo-border: 0 0% 18%; /* #2e2e2e */
+    --tokyo-zinc-300: 0 0% 83%;
+    --tokyo-zinc-400: 0 0% 71%;
+    --tokyo-zinc-600: 0 0% 52%;
+    --tokyo-zinc-900: 0 0% 11%;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-tokyo-dark text-foreground font-sans antialiased;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-white via-zinc-300 to-zinc-500 bg-clip-text text-transparent;
+  }
+  
+  .tokyo-button-primary {
+    @apply bg-white hover:bg-zinc-100 text-tokyo-dark font-semibold px-6 py-3 rounded-lg transition-all hover:opacity-90 cursor-pointer;
+  }
+  
+  .tokyo-button-secondary {
+    @apply hover:opacity-80 text-white font-semibold px-6 py-2 rounded-lg transition-colors cursor-pointer border border-transparent hover:border-zinc-700;
+  }
+  
+  .tokyo-card {
+    @apply bg-gradient-to-r from-black via-zinc-500/20 to-black border border-zinc-500/20 rounded-xl;
+  }
+  
+  .tokyo-feature-card {
+    @apply bg-white rounded-xl p-8 hover:border-zinc-600 transition-all hover:scale-105;
+  }
+  
+  .tokyo-nav-link {
+    @apply text-zinc-300 hover:text-white transition-colors;
   }
 }
